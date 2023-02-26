@@ -1,0 +1,9 @@
+.display {
+    display: none;
+}
+
+@media (min-width: 482px) {
+    .display {
+        display: flex;
+    }
+}

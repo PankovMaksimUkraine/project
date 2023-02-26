@@ -1,0 +1,204 @@
+.about {
+    &__text {
+        padding-bottom: 37px;
+        padding-top: 7px;
+    }
+    &__top {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: $active-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &__main {
+        padding-bottom: 33px;
+    }
+    &__centr {
+        font-size: 19px;
+        line-height: 30px;
+        padding-top: 28px;
+        margin-bottom: -8px;
+    }
+    &__icon {
+        display: grid;
+        row-gap: 40px;
+        padding-left: 30px;
+        border-left: 4px solid $border-color;
+    }
+    &__team {
+        position: relative;
+        padding-bottom: 6px;
+    }
+    &__bottom {
+        padding-top: 30px;
+        font-size: 19px;
+        line-height: 30px;
+        margin-bottom: -9px;
+    }
+    &__card-2 {
+        padding-top: 36px;
+    }
+    &__card-2-text {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: $about-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    &__company {
+        padding-bottom: 60px;
+    }
+    &__achievements {
+        background: $backgrond-img-color;
+    }
+    &__achievements-text {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-align: center;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $light-grey;
+        padding: 30px 0;
+    }
+    &__logo {
+        border-bottom: 2px solid $border-color;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding-bottom: 30px;
+    }
+    &__logo-icon {
+        padding-bottom: 30px;
+    }
+    &__logo-card {
+        padding: 24px 100px;
+        background: $white;
+        border-radius: 12px;
+        &--none {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 582px) {
+    .about {
+        &__logo-icon {
+            display: grid;
+            width: 100%;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            gap: 40px;
+        }
+        &__logo-card {
+            padding: 0;
+            &--none {
+                display: block;
+            }
+        }
+        &__logo-size {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 90px;
+            background: $white;
+            border-radius: 12px;
+        }
+        &__top {
+            font-size: 38px;
+            line-height: 46px;
+            padding-top: 19px;
+        }
+        &__card-1 {
+            padding-top: 48px;
+        }
+        &__card-2-text {
+            font-size: 38px;
+            line-height: 46px;
+        }
+        &__main {
+            padding-bottom: 10px;
+        }
+    }
+}
+
+@media (min-width: 868px) {
+    .about {
+        padding-top: 38px;
+        &__text {
+            width: 79%;
+            margin-right: 30px;
+            padding: 0;
+        }
+        &__main {
+            display: flex;
+            padding-bottom: 63px;
+        }
+        &__top {
+            padding: 0;
+        }
+        &__logo-size {
+            height: 110px;
+        }
+        &__company {
+            display: flex;
+            padding-top: 46px;
+        }
+        &__card-1 {
+            width: 50%;
+            padding-top: 0;
+        }
+        &__card-2 {
+            width: 50%;
+        }
+        &__card-2-text {
+            padding-left: 90px;
+        }
+        &__achievements-text {
+            padding-top: 39px;
+        }
+        &__icon {
+            grid-template-rows: min-content min-content min-content;
+        }
+        &__logo-card {
+            height: 60px;
+        }
+        &__logo {
+            padding-bottom: 20px;
+        }
+    }
+}
+
+@media (min-width: 1201px) {
+    .about {
+        &__main {
+            justify-content: center;
+        }
+        &__text {
+            max-width: 652px;
+            margin-right: 39px;
+        }
+        &__icon {
+            max-width: 388px;
+        }
+        &__company {
+            justify-content: center;
+        }
+        &__card-1 {
+            max-width: 658px;
+        }
+        &__card-2 {
+            max-width: 362px;
+            margin-left: 61px;
+        }
+        &__card-2-text {
+            margin: 0;
+            padding: 0;
+        }
+        &__bottom {
+            padding-top: 37px;
+            margin-bottom: -17px;
+        }
+    }
+}

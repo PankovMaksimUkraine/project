@@ -1,0 +1,218 @@
+.main {
+    padding-top: 50px;
+    &__top {
+        background: $backgrond-img-color;
+        border-radius: 12px;
+    }
+    &__img {
+        width: 100%;
+        height: 500px;
+        border-radius: 12px 12px 0px 0px;
+        object-fit: cover;
+    }
+    &__text {
+        padding: 27px 29px 0;
+        margin-bottom: 30px;
+    }
+    &__link {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        text-transform: uppercase;
+        letter-spacing: 2px;
+        color: $link-color;
+        padding-bottom: 5px;
+        &::after {
+            content: "";
+            background-image: url(../img/link-element.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            padding-left: 15px;
+        }
+    }
+    &__text-top {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background-image: $active-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-bottom: 73px;
+    }
+    &__text-centr {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: $grey;
+        padding-bottom: 4px;
+        width: 50%;
+        letter-spacing: 1px;
+    }
+    &__text-bottom {
+        font-size: 14px;
+        line-height: 22px;
+        letter-spacing: 1px;
+        color: $grey;
+        padding-bottom: 30px;
+    }
+    &__tagline {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        text-align: center;
+        padding-top: 60px;
+        padding-bottom: 30px;
+    }
+    &__company {
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+    }
+    &__company-logo {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 120px;
+        align-items: center;
+    }
+    &__footer-link {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $link-color;
+        margin-bottom: 5px;
+        display: flex;
+        &::after {
+            content: "";
+            background-image: url(../img/link-element.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            padding-left: 15px;
+        }
+    }
+    &__footer-text {
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        background: $active-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 30px;
+    }
+
+    &__cards-2 {
+        padding-bottom: 4px;
+        border-bottom: 2px solid $border-color;
+    }
+    &__company-logo--color-1 {
+        background-color: $backgrond-icon-1;
+    }
+    &__company-logo--color-2 {
+        background-color: $backgrond-icon-2;
+    }
+    &__company-logo--color-3 {
+        background: $backgrond-icon-3;
+    }
+    &__company-logo--color-4 {
+        background-color: $backgrond-icon-4;
+    }
+    &__company-logo--color-5 {
+        background-color: $backgrond-icon-5;
+    }
+    &__company-logo--color-6 {
+        background-color: $backgrond-icon-6;
+    }
+    &__company-logo--color-7 {
+        background-color: $backgrond-icon-7;
+    }
+    &__company-logo--color-8 {
+        background-color: $backgrond-icon-8;
+    }
+    &__company-logo--color-9 {
+        background-color: $backgrond-icon-9;
+    }
+    &__company-logo--color-10 {
+        background-color: $backgrond-icon-10;
+    }
+    &__company-logo--color-11 {
+        background-color: $backgrond-icon-11;
+    }
+    &__company-logo--color-12 {
+        background-color: $backgrond-icon-12;
+    }
+}
+
+@media (min-width: 482px) {
+    .main {
+        &__company {
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        &__company-logo {
+            width: 33.333%;
+        }
+        &__cards-2 {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr;
+            column-gap: 30px;
+            padding-bottom: 0;
+        }
+        &__text-top {
+            font-size: 38px;
+            line-height: 46px;
+            padding-bottom: 79px;
+        }
+        &__footer-text {
+            font-size: 38px;
+            line-height: 46px;
+        }
+        &__footer-link {
+            margin-bottom: 11px;
+        }
+    }
+}
+
+@media (min-width: 868px) {
+    .main {
+        &__top {
+            display: flex;
+            margin-bottom: 55px;
+        }
+        &__text {
+            margin-bottom: 0;
+        }
+        &__text-centr {
+            width: auto;
+        }
+        &__text-bottom {
+            padding-bottom: 0;
+        }
+        &__img {
+            width: 44%;
+        }
+        &__company-logo {
+            width: 25%;
+        }
+        &__cards-2 {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
+@media (min-width: 1201px) {
+    .main {
+        &__img {
+            width: 400px;
+            height: 344px;
+        }
+        &__top {
+            margin-bottom: 27px;
+        }
+    }
+}

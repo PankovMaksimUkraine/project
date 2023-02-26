@@ -1,0 +1,28 @@
+.main-btn {
+    display: flex;
+    justify-content: center;
+    &__click {
+        width: 16px;
+        height: 16px;
+        background-color: $link-color;
+        opacity: 0.2;
+        border-radius: 50%;
+        margin: 0 5px;
+        border: 0;
+        &.active-btn {
+            opacity: 1;
+        }
+        &:not(.active-btn):hover {
+            opacity: 0.6;
+        }
+    }
+}
+@media (min-width: 482px) {
+    .main-btn {
+        &__click {
+            &--none {
+                display: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,52 @@
+.header-backrgound {
+    background-image: url(../img/background-h.svg), $main-gradient;
+    background-repeat: no-repeat, repeat;
+    background-position: top center, center center;
+    background-size: 524px 600px, cover;
+    padding-bottom: 30px;
+    position: relative;
+    border-radius: 0px 0px 12px 12px;
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: -10px;
+        height: 10px;
+        left: 20px;
+        right: 20px;
+        border-radius: 0px 0px 12px 12px;
+        background: $first-border;
+    }
+    &::before {
+        content: "";
+        position: absolute;
+        bottom: -20px;
+        height: 10px;
+        left: 40px;
+        right: 40px;
+        border-radius: 0px 0px 12px 12px;
+        background: $second-border;
+    }
+    &--about {
+        background-image: none;
+        &::after {
+            display: none;
+        }
+        &::before {
+            display: none;
+        }
+    }
+}
+
+@media (min-width: 482px) {
+    .header-backrgound {
+        background-size: 893px 1024px, cover;
+        padding-bottom: 0;
+        margin-bottom: 30px;
+    }
+}
+
+@media (min-width: 868px) {
+    .header-backrgound {
+        background-size: 670px 768px, cover;
+    }
+}

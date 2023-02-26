@@ -1,0 +1,45 @@
+.about-card {
+    &__icon-1 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 44px;
+        background: $about-gradient;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        display: flex;
+        align-items: center;
+        &--img-1::before {
+            content: "";
+            background-image: url(../img/about/icon-1.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+        }
+        &--img-2::before {
+            content: "";
+            background-image: url(../img/about/icon-2.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+        }
+        &--img-3::before {
+            content: "";
+            background-image: url(../img/about/icon-3.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 32px;
+            height: 32px;
+            margin-right: 8px;
+        }
+    }
+    &__text {
+        font-size: 16px;
+        line-height: 20px;
+        color: $light-grey;
+        padding-top: 10px;
+    }
+}

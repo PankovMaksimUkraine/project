@@ -1,0 +1,36 @@
+.lang {
+    display: flex;
+    list-style: none;
+    padding-left: 0;
+    padding: 9px 0;
+    margin: 0 -15px;
+    &__link {
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: center;
+        letter-spacing: 1px;
+        color: $white;
+        padding: 5px 8px;
+        border-radius: 8px;
+        display: block;
+        text-transform: uppercase;
+        &--about {
+            color: $grey;
+        }
+    }
+    & a:hover {
+        background-color: $backgrond-img-color;
+        color: $grey;
+    }
+    & a.active {
+        background-color: $active-color;
+        color: $white;
+    }
+}
+
+@media (min-width: 482px) {
+    .lang {
+        padding-right: 13px;
+    }
+}

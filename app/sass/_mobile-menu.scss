@@ -1,0 +1,26 @@
+.mobile-menu {
+    background-image: url(../img/button-mobile.svg);
+    height: 32px;
+    width: 32px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    margin: 8px -15px;
+    &:active {
+        background-color: $border-color;
+        border-radius: 8px;
+    }
+    &--about {
+        background-image: url(../img/about/Hamburger.svg);
+        margin-top: 11px;
+    }
+    &--close {
+        background-image: url(../img/Close.svg);
+    }
+}
+
+@media (min-width: 482px) {
+    .mobile-menu {
+        display: none;
+    }
+}

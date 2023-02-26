@@ -1,0 +1,61 @@
+.addres {
+    display: none;
+    &--row-2 {
+        color: $light-grey;
+        display: block;
+        padding-bottom: 11px;
+    }
+}
+
+@media (min-width: 482px) {
+    .addres {
+        font-size: 16px;
+        line-height: 20px;
+        color: $white;
+        display: flex;
+        align-items: center;
+        &::before {
+            content: "";
+            background: $border-color;
+            border-radius: 50%;
+            margin: 0 6px;
+            background-position: center;
+            width: 6px;
+            height: 6px;
+        }
+        &::after {
+            content: "";
+            background: $grey;
+            border-radius: 50%;
+            background-position: center;
+            width: 6px;
+            height: 6px;
+            margin: 0 10px;
+        }
+        &--row-1 {
+            color: $white;
+            padding-right: 16px;
+            &::after {
+                display: none;
+            }
+        }
+        &--row-2 {
+            color: $light-grey;
+            padding-bottom: 0;
+            &::before {
+                display: none;
+            }
+        }
+        &--about {
+            color: $grey;
+        }
+    }
+}
+
+@media (min-width: 88px) {
+    .addres {
+        &--row-1 {
+            padding-right: 13px;
+        }
+    }
+}

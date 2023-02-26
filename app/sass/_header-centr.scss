@@ -1,0 +1,51 @@
+.header-centr {
+    margin-top: 137px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__text {
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 46px;
+        color: $white;
+        text-align: center;
+        padding: 0 15px 159px;
+        margin-left: 27px;
+    }
+    &__button-scroll:hover path {
+        stroke: $active-color;
+    }
+    &__button-scroll:hover circle {
+        stroke: $active-color;
+    }
+}
+
+@media (min-width: 582px) {
+    .header-centr {
+        &__text {
+            padding-top: 127px;
+            padding-bottom: 418px;
+            margin-left: 0;
+        }
+    }
+}
+
+@media (min-width: 868px) {
+    .header-centr {
+        margin-top: 125px;
+        &__text {
+            padding-top: 126px;
+            padding-bottom: 288px;
+            margin: 0;
+        }
+    }
+}
+
+@media (min-width: 1201px) {
+    .header-centr {
+        &__text {
+            padding-top: 144px;
+            padding-bottom: 303px;
+        }
+    }
+}

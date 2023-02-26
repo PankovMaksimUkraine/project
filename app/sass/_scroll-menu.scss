@@ -1,0 +1,128 @@
+.scroll-menu {
+    &__btn {
+        display: flex;
+        white-space: nowrap;
+        overflow: auto;
+        border-bottom: 4px solid $border-button;
+        &::-webkit-scrollbar {
+            display: none;
+        }
+    }
+    &__text {
+        border: none;
+        color: inherit;
+        background-color: transparent;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 37px;
+        color: $grey;
+        padding: 0 30px 0 0;
+        margin-top: 56px;
+        margin-bottom: 29px;
+        &.active {
+            background-image: $active-gradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    &__comment-first {
+        font-weight: 700;
+        font-size: 20px;
+        line-height: 24px;
+        color: $white;
+        padding: 30px 0;
+    }
+    &__comment-second {
+        font-size: 19px;
+        line-height: 30px;
+        color: $white;
+        padding-bottom: 30px;
+    }
+    &__link {
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+        color: $link-color;
+        &::after {
+            content: "";
+            background-image: url(../img/link-element.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            padding-left: 15px;
+        }
+    }
+}
+
+@media (min-width: 482px) {
+    .scroll-menu {
+        &__comment-first {
+            font-size: 30px;
+            line-height: 37px;
+            padding-top: 61px;
+        }
+        &__comment-second {
+            padding-bottom: 57px;
+        }
+
+        &__text {
+            font-size: 38px;
+            line-height: 46px;
+            letter-spacing: 2px;
+            margin-top: 86px;
+            margin-bottom: 58px;
+        }
+    }
+}
+
+@media (min-width: 868px) {
+    .scroll-menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 86px;
+        &__comment {
+            padding-left: 48px;
+        }
+        &__comment-first {
+            padding-top: 10px;
+        }
+        &__comment-second {
+            padding-bottom: 0;
+        }
+        &__link {
+            margin-top: 59px;
+        }
+        &__btn {
+            white-space: normal;
+            flex-direction: column;
+            border-right: 4px solid rgba(255, 255, 255, 0.3);
+            border-bottom: 0;
+            margin-right: 16px;
+            align-items: flex-end;
+            white-space: nowrap;
+        }
+        &__text {
+            margin-top: 16px;
+            margin-bottom: 14px;
+            padding-right: 58px;
+            &:hover {
+                color: $active-color;
+            }
+        }
+    }
+}
+
+@media (min-width: 1201px) {
+    .scroll-menu {
+        grid-template-columns: min-content 1fr;
+        &__btn {
+            margin-right: 62px;
+            margin-left: 123px;
+        }
+        &__comment {
+            padding-top: 34px;
+            padding-left: 0;
+        }
+    }
+}
