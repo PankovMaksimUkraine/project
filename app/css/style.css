@@ -232,7 +232,7 @@ a {
 }
 .main__link::after {
   content: "";
-  background-image: url(../img/link-element.svg);
+  background-image: url("../img/link-element.svg");
   background-position: center;
   background-repeat: no-repeat;
   padding-left: 15px;
@@ -309,7 +309,7 @@ a {
 }
 .main__footer-link::after {
   content: "";
-  background-image: url(../img/link-element.svg);
+  background-image: url("../img/link-element.svg");
   background-position: center;
   background-repeat: no-repeat;
   padding-left: 15px;
@@ -370,10 +370,8 @@ a {
   .main__company {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
   }
   .main__company-logo {
     width: 33.333%;
@@ -417,7 +415,7 @@ a {
     padding-bottom: 0;
   }
   .main__img {
-    width: 44%;
+    width: auto;
   }
   .main__company-logo {
     width: 25%;
@@ -436,7 +434,7 @@ a {
   }
 }
 .header-backrgound {
-  background-image: url(../img/background-h.svg), linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
+  background-image: url("../img/background-h.svg"), linear-gradient(228.57deg, #323264 11.93%, #323264 57.17%, #643e72 87.46%);
   background-repeat: no-repeat, repeat;
   background-position: top center, center center;
   background-size: 524px 600px, cover;
@@ -622,7 +620,7 @@ a {
 }
 .scroll-menu__link::after {
   content: "";
-  background-image: url(../img/link-element.svg);
+  background-image: url("../img/link-element.svg");
   background-position: center;
   background-repeat: no-repeat;
   padding-left: 15px;
@@ -700,7 +698,7 @@ a {
   }
 }
 .mobile-menu {
-  background-image: url(../img/button-mobile.svg);
+  background-image: url("../img/button-mobile.svg");
   height: 32px;
   width: 32px;
   border: none;
@@ -713,11 +711,11 @@ a {
   border-radius: 8px;
 }
 .mobile-menu--about {
-  background-image: url(../img/about/Hamburger.svg);
+  background-image: url("../img/about/Hamburger.svg");
   margin-top: 11px;
 }
 .mobile-menu--close {
-  background-image: url(../img/Close.svg);
+  background-image: url("../img/Close.svg");
 }
 
 @media (min-width: 482px) {
@@ -886,7 +884,7 @@ a {
   padding-top: 3px;
 }
 .logo-box__text--about::before {
-  background-image: url(../img/about/slash.svg);
+  background-image: url("../img/about/slash.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -1453,7 +1451,7 @@ a {
 }
 .about-card__icon-1--img-1::before {
   content: "";
-  background-image: url(../img/about/icon-1.svg);
+  background-image: url("../img/about/icon-1.svg");
   background-position: center;
   background-repeat: no-repeat;
   width: 32px;
@@ -1462,7 +1460,7 @@ a {
 }
 .about-card__icon-1--img-2::before {
   content: "";
-  background-image: url(../img/about/icon-2.svg);
+  background-image: url("../img/about/icon-2.svg");
   background-position: center;
   background-repeat: no-repeat;
   width: 32px;
@@ -1471,7 +1469,7 @@ a {
 }
 .about-card__icon-1--img-3::before {
   content: "";
-  background-image: url(../img/about/icon-3.svg);
+  background-image: url("../img/about/icon-3.svg");
   background-position: center;
   background-repeat: no-repeat;
   width: 32px;

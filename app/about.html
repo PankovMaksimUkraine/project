@@ -4,6 +4,34 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="preload"
+            href="fonts/montserrat-v25-latin-700.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/montserrat-v25-latin-700italic.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/montserrat-v25-latin-italic.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/montserrat-v25-latin-regular.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
         <link rel="stylesheet" href="./css/style.css" />
         <title>About Us</title>
     </head>
@@ -180,11 +208,28 @@
                     </div>
                 </div>
                 <div class="about__team">
-                    <img
-                        class="img-responsive"
-                        src="./img/about/Photo.png"
-                        alt="foto"
-                    />
+                    <picture>
+                        <source
+                            media="(min-width:868px)"
+                            srcset="
+                                ./img/about/Photo.png    1x,
+                                ./img/about/Photo@2x.png 2x
+                            "
+                        />
+                        <source
+                            media="(min-width:482px)"
+                            srcset="
+                                ./img/about/Photo_tablet.png    1x,
+                                ./img/about/Photo_tablet@2x.png 2x
+                            "
+                        />
+                        <img
+                            class="img-responsive"
+                            src="./img/about/Photo_mobile.png"
+                            srcset="./img/about/Photo_mobile@2x.png 2x"
+                            alt="foto"
+                        />
+                    </picture>
                     <p class="img-responsive img-responsive--text">team</p>
                 </div>
                 <div class="container">

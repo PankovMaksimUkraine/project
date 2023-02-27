@@ -24,7 +24,7 @@
         padding-bottom: 5px;
         &::after {
             content: "";
-            background-image: url(../img/link-element.svg);
+            background-image: url("../img/link-element.svg");
             background-position: center;
             background-repeat: no-repeat;
             padding-left: 15px;
@@ -88,7 +88,7 @@
         display: flex;
         &::after {
             content: "";
-            background-image: url(../img/link-element.svg);
+            background-image: url("../img/link-element.svg");
             background-position: center;
             background-repeat: no-repeat;
             padding-left: 15px;
@@ -193,7 +193,7 @@
             padding-bottom: 0;
         }
         &__img {
-            width: 44%;
+            width: auto;
         }
         &__company-logo {
             width: 25%;

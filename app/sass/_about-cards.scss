@@ -10,7 +10,7 @@
         align-items: center;
         &--img-1::before {
             content: "";
-            background-image: url(../img/about/icon-1.svg);
+            background-image: url("../img/about/icon-1.svg");
             background-position: center;
             background-repeat: no-repeat;
             width: 32px;
@@ -19,7 +19,7 @@
         }
         &--img-2::before {
             content: "";
-            background-image: url(../img/about/icon-2.svg);
+            background-image: url("../img/about/icon-2.svg");
             background-position: center;
             background-repeat: no-repeat;
             width: 32px;
@@ -28,7 +28,7 @@
         }
         &--img-3::before {
             content: "";
-            background-image: url(../img/about/icon-3.svg);
+            background-image: url("../img/about/icon-3.svg");
             background-position: center;
             background-repeat: no-repeat;
             width: 32px;

@@ -4,6 +4,34 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            rel="preload"
+            href="fonts/montserrat-v25-latin-700.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/montserrat-v25-latin-700italic.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/montserrat-v25-latin-italic.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="preload"
+            href="fonts/montserrat-v25-latin-regular.woff2"
+            as="font"
+            type="font/woff2"
+            crossorigin="anonymous"
+        />
         <link rel="stylesheet" href="./css/style.css" />
         <title>Home</title>
     </head>
@@ -255,11 +283,28 @@
         <main id="main" class="main">
             <div class="container">
                 <div class="main__top">
-                    <img
-                        class="main__img"
-                        src="./img/image-man.png"
-                        alt="man"
-                    />
+                    <picture>
+                        <source
+                            media="(min-width:868px)"
+                            srcset="
+                                ./img/man_tablet.jpg    1x,
+                                ./img/man_tablet@2x.jpg 2x
+                            "
+                        />
+                        <source
+                            media="(min-width:482px)"
+                            srcset="
+                                ./img/image-man.png    1x,
+                                ./img/image-man@2x.png 2x
+                            "
+                        />
+                        <img
+                            class="main__img"
+                            src="./img/man_mobile.jpg"
+                            srcset="./img/man_mobile@2x.jpg 2x"
+                            alt="man"
+                        />
+                    </picture>
                     <div class="main__text">
                         <a class="main__link" href="#"> Команда</a>
                         <h2 class="main__text-top">
@@ -343,11 +388,14 @@
                     <h2 class="main__footer-text">We have something to tell</h2>
                     <div class="main__cards-2">
                         <div class="card-2">
-                            <img
-                                class="img-responsive img-responsive--height-2"
-                                src="./img/card-img-1.png"
-                                alt="card-2"
-                            />
+                            <picture>
+                                <img
+                                    class="img-responsive img-responsive--height-2"
+                                    src="./img/card-img-1.png"
+                                    srcset="./img/card-img-1@2x.png"
+                                    alt="card-2"
+                                />
+                            </picture>
                             <div class="card-2__text-1">
                                 <a class="card-2__link" href="#"
                                     >Equity associate</a
@@ -362,11 +410,14 @@
                             </p>
                         </div>
                         <div class="card-2">
-                            <img
-                                class="img-responsive img-responsive--height-2"
-                                src="./img/card-img-2.png"
-                                alt="card-2"
-                            />
+                            <picture>
+                                <img
+                                    class="img-responsive img-responsive--height-2"
+                                    src="./img/card-img-2.png"
+                                    srcset="./img/card-img-2@2x.png"
+                                    alt="card-2"
+                                />
+                            </picture>
                             <div class="card-2__text-1">
                                 <a class="card-2__link" href="#"
                                     >Penalty for the Good Corporation: what will
@@ -384,11 +435,21 @@
                             </p>
                         </div>
                         <div class="card-2 card-2--mod">
-                            <img
-                                class="img-responsive img-responsive--height-2"
-                                src="./img/card-img-3.png"
-                                alt="card-2"
-                            />
+                            <picture>
+                                <source
+                                    media="(min-width:482px)"
+                                    srcset="
+                                        ./img/card-img-3_tablet.jpg    1x,
+                                        ./img/card-img-3_tablet@2x.jpg 2x
+                                    "
+                                />
+                                <img
+                                    class="img-responsive img-responsive--height-2"
+                                    src="./img/card-img-3.png"
+                                    srcset="./img/card-img-3@2x.png 2x"
+                                    alt="card-2"
+                                />
+                            </picture>
                             <div class="card-2__text-1">
                                 <a class="card-2__link" href="#"
                                     >Millennial Testament</a

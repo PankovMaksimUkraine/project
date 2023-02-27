@@ -46,7 +46,7 @@
         color: $link-color;
         &::after {
             content: "";
-            background-image: url(../img/link-element.svg);
+            background-image: url("../img/link-element.svg");
             background-position: center;
             background-repeat: no-repeat;
             padding-left: 15px;
