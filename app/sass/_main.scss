@@ -150,8 +150,7 @@
 @media (min-width: 482px) {
     .main {
         &__company {
-            flex-direction: row;
-            flex-wrap: wrap;
+            flex-flow: row wrap;
         }
         &__company-logo {
             width: 33.333%;

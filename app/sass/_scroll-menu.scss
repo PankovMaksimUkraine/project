@@ -10,7 +10,6 @@
     }
     &__text {
         border: none;
-        color: inherit;
         background-color: transparent;
         font-weight: 700;
         font-size: 30px;
@@ -94,9 +93,8 @@
             margin-top: 59px;
         }
         &__btn {
-            white-space: normal;
             flex-direction: column;
-            border-right: 4px solid rgba(255, 255, 255, 0.3);
+            border-right: $border-button;
             border-bottom: 0;
             margin-right: 16px;
             align-items: flex-end;
