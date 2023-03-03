@@ -13,9 +13,13 @@
     &--about {
         background-image: url("../img/about/Hamburger.svg");
         margin-top: 11px;
+        background-color: transparent;
     }
     &--close {
         background-image: url("../img/Close.svg");
+        background-color: transparent;
+        background-color: red;
+        border-radius: 10px;
     }
 }
 

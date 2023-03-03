@@ -22,13 +22,13 @@
     "gulp-svgstore": "^9.0.0",
     "gulp-uglify": "^3.0.2",
     "gulp-webp": "^4.0.1",
+    "jquery": "^3.6.3",
     "node-sass": "^8.0.0",
     "postcss": "^8.4.21",
     "sass": "^1.58.0",
+    "slick-carousel": "^1.8.1",
     "stylelint": "^15.2.0",
-    "stylelint-config-standard-scss": "^7.0.1",
-    "jquery": "^3.6.3",
-    "slick-carousel": "^1.8.1"
+    "stylelint-config-standard-scss": "^7.0.1"
   },
   "scripts": {
     "stylelint": "npx stylelint \"app/sass/**/*.scss\"",

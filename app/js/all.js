@@ -4088,3 +4088,11 @@ function _typeof(obj) { "@babel/helpers - typeof"; return _typeof = "function" =
     return o;
   };
 });
+var burger = document.querySelector(".mobile-menu");
+var menu = document.querySelector(".menu__list");
+burger.addEventListener("click", function () {
+  menu.classList.toggle("menu__list--none");
+  burger.classList.toggle("mobile-menu--close");
+});
+console.log(burger);
+console.log(menu);
