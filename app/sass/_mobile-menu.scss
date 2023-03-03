@@ -18,7 +18,7 @@
     &--close {
         background-image: url("../img/Close.svg");
         background-color: transparent;
-        background-color: red;
+        background-color: $active-color;
         border-radius: 10px;
     }
 }
