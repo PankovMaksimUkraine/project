@@ -106,6 +106,9 @@
             padding-right: 58px;
             &:hover {
                 color: $active-color;
+                transition-duration: 500ms;
+                transition-delay: 60ms;
+                transition-property: all;
             }
         }
     }

@@ -28,6 +28,9 @@
         padding-bottom: 15px;
         &:hover {
             color: $active-color;
+            transition-duration: 500ms;
+            transition-delay: 60ms;
+            transition-property: all;
         }
     }
     &__comment-2 {

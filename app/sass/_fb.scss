@@ -2,6 +2,9 @@
     display: none;
     &:hover path {
         fill: $active-color;
+        transition-duration: 500ms;
+        transition-delay: 60ms;
+        transition-property: all;
     }
     &--about path {
         fill: $grey;

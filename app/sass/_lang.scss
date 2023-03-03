@@ -21,6 +21,9 @@
     & a:hover {
         background-color: $backgrond-img-color;
         color: $grey;
+        transition-duration: 500ms;
+        transition-delay: 60ms;
+        transition-property: all;
     }
     & a.active {
         background-color: $active-color;

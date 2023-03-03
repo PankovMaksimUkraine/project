@@ -14,9 +14,15 @@
     }
     &__button-scroll:hover path {
         stroke: $active-color;
+        transition-duration: 500ms;
+        transition-delay: 60ms;
+        transition-property: all;
     }
     &__button-scroll:hover circle {
         stroke: $active-color;
+        transition-duration: 500ms;
+        transition-delay: 60ms;
+        transition-property: all;
     }
 }
 

@@ -72,6 +72,9 @@
             margin-left: 3px;
             &:hover {
                 border-bottom: 2px solid $white;
+                transition-duration: 500ms;
+                transition-delay: 60ms;
+                transition-property: all;
             }
             &--about {
                 color: $link-color;
@@ -80,6 +83,9 @@
                 }
                 &:not(.active):hover {
                     border-bottom: 2px solid $link-color;
+                    transition-duration: 500ms;
+                    transition-delay: 60ms;
+                    transition-property: all;
                 }
             }
         }

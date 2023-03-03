@@ -158,6 +158,12 @@ a {
 }
 .footer__mail:hover {
   color: #f0145a;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-delay: 60ms;
+          transition-delay: 60ms;
+  -webkit-transition-property: all;
+  transition-property: all;
 }
 .footer__info {
   font-size: 16px;
@@ -559,6 +565,12 @@ a {
 .lang a:hover {
   background-color: #f5f5fa;
   color: #b3b3ba;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-delay: 60ms;
+          transition-delay: 60ms;
+  -webkit-transition-property: all;
+  transition-property: all;
 }
 .lang a.active {
   background-color: #f0145a;
@@ -681,6 +693,12 @@ a {
   }
   .scroll-menu__text:hover {
     color: #f0145a;
+    -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+    -webkit-transition-delay: 60ms;
+            transition-delay: 60ms;
+    -webkit-transition-property: all;
+    transition-property: all;
   }
 }
 @media (min-width: 1201px) {
@@ -747,9 +765,21 @@ a {
 }
 .header-centr__button-scroll:hover path {
   stroke: #f0145a;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-delay: 60ms;
+          transition-delay: 60ms;
+  -webkit-transition-property: all;
+  transition-property: all;
 }
 .header-centr__button-scroll:hover circle {
   stroke: #f0145a;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-delay: 60ms;
+          transition-delay: 60ms;
+  -webkit-transition-property: all;
+  transition-property: all;
 }
 
 @media (min-width: 582px) {
@@ -810,6 +840,12 @@ a {
 }
 .header-bottom__comment-1:hover {
   color: #f0145a;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-delay: 60ms;
+          transition-delay: 60ms;
+  -webkit-transition-property: all;
+  transition-property: all;
 }
 .header-bottom__comment-2 {
   padding-top: 17px;
@@ -1070,6 +1106,12 @@ a {
   }
   .menu__link:hover {
     border-bottom: 2px solid #fff;
+    -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+    -webkit-transition-delay: 60ms;
+            transition-delay: 60ms;
+    -webkit-transition-property: all;
+    transition-property: all;
   }
   .menu__link--about {
     color: #24a3ff;
@@ -1079,6 +1121,12 @@ a {
   }
   .menu__link--about:not(.active):hover {
     border-bottom: 2px solid #24a3ff;
+    -webkit-transition-duration: 500ms;
+            transition-duration: 500ms;
+    -webkit-transition-delay: 60ms;
+            transition-delay: 60ms;
+    -webkit-transition-property: all;
+    transition-property: all;
   }
 }
 @media (min-width: 868px) {
@@ -1097,6 +1145,12 @@ a {
 }
 .fb:hover path {
   fill: #f0145a;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-delay: 60ms;
+          transition-delay: 60ms;
+  -webkit-transition-property: all;
+  transition-property: all;
 }
 .fb--about path {
   fill: #b3b3ba;
@@ -1174,6 +1228,12 @@ a {
 }
 .card-2__link:hover {
   color: #f0145a;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-delay: 60ms;
+          transition-delay: 60ms;
+  -webkit-transition-property: all;
+  transition-property: all;
 }
 .card-2__comment {
   font-weight: 700;
@@ -1505,6 +1565,12 @@ a {
 }
 .main-btn__click:not(.active-btn):hover {
   opacity: 0.6;
+  -webkit-transition-duration: 500ms;
+          transition-duration: 500ms;
+  -webkit-transition-delay: 60ms;
+          transition-delay: 60ms;
+  -webkit-transition-property: all;
+  transition-property: all;
 }
 
 @media (min-width: 482px) {

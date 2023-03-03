@@ -26,6 +26,9 @@
         color: $link-color;
         &:hover {
             color: $active-color;
+            transition-duration: 500ms;
+            transition-delay: 60ms;
+            transition-property: all;
         }
     }
     &__info {
